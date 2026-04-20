@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ishmael Wallace | IT Portfolio</title>
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -14,10 +13,8 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: #0b1120;
     color: #e5e7eb;
-    scroll-behavior: smooth;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -35,7 +32,6 @@ header {
     color: #bbf7d0;
 }
 
-/* PHOTO */
 .profile-img {
     width: 170px;
     height: 170px;
@@ -44,12 +40,10 @@ header {
     border: 3px solid #16a34a;
 }
 
-/* NAV */
 nav {
     background: #020617;
     padding: 15px;
     text-align: center;
-    border-bottom: 1px solid #1f2937;
 }
 
 nav a {
@@ -57,14 +51,8 @@ nav a {
     text-decoration: none;
     color: #22c55e;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #4ade80;
-}
-
-/* MAIN */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -79,35 +67,19 @@ h2 {
     color: #22c55e;
 }
 
-/* CARDS */
 .card {
     background: #111827;
     padding: 20px;
     border-radius: 12px;
     margin-top: 15px;
     border: 1px solid #1f2937;
-    transition: all 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-    border-color: #16a34a;
-}
-
-/* GRID */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-}
-
-/* ICON */
 .icon {
     margin-right: 10px;
     color: #16a34a;
 }
 
-/* BUTTON */
 .button {
     display: inline-block;
     margin-top: 15px;
@@ -116,31 +88,12 @@ h2 {
     color: white;
     border-radius: 8px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.button:hover {
-    background: #15803d;
-}
-
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #020617;
-    margin-top: 40px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-img {
-        margin-top: 20px;
-    }
 }
 </style>
 </head>
@@ -153,24 +106,19 @@ footer {
         <p><i class="fa-solid fa-laptop-code icon"></i>IT Professional | Software Developer</p>
         <p><i class="fa-solid fa-location-dot icon"></i>Portland, TX</p>
 
-        <!-- Resume Button -->
         <a href="resume.pdf" class="button" target="_blank">
             <i class="fa-solid fa-file icon"></i>Download Resume
         </a>
-
-        <!-- Certification -->
-        <p><i class="fa-solid fa-certificate icon"></i>Cisco CCNAv7 Certified</p>
     </div>
 
-    <!-- PHOTO -->
-    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+    <img src="profile.jpg" class="profile-img">
 </header>
 
 <nav>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#journal">Journal</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -180,19 +128,9 @@ footer {
     <h2><i class="fa-solid fa-user icon"></i>About Me</h2>
     <div class="card">
         <p>
-        IT professional and U.S. Army veteran pursuing a Computer Programming degree at Del Mar College (GPA: 3.88).
-        Strong experience in networking, programming, and troubleshooting with hands-on technical projects.
+        IT professional and U.S. Army veteran pursuing a Computer Programming degree at Del Mar College.
+        Hands-on experience in networking, hardware, troubleshooting, and system configuration.
         </p>
-    </div>
-</section>
-
-<section id="skills">
-    <h2><i class="fa-solid fa-code icon"></i>Technical Skills</h2>
-    <div class="skills-grid">
-        <div class="card"><i class="fa-solid fa-terminal icon"></i>Python, Java, JavaScript, SQL</div>
-        <div class="card"><i class="fa-solid fa-database icon"></i>MySQL, SQL Server</div>
-        <div class="card"><i class="fa-solid fa-network-wired icon"></i>Cisco Packet Tracer</div>
-        <div class="card"><i class="fa-solid fa-desktop icon"></i>Windows, Linux, MacOS</div>
     </div>
 </section>
 
@@ -200,27 +138,23 @@ footer {
     <h2><i class="fa-solid fa-briefcase icon"></i>Experience</h2>
 
     <div class="card">
-        <h3>Del Mar College – IT Student</h3>
+        <h3>Raventech Systems – IT Intern</h3>
         <ul>
-            <li>Built Java and Python applications</li>
-            <li>Designed relational databases (MySQL)</li>
-            <li>Configured networks using Packet Tracer</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>ACI Learning – IT Trainee</h3>
-        <ul>
-            <li>Troubleshot systems and networks</li>
-            <li>Configured hardware and operating systems</li>
+            <li>Performed help desk support in hospital environments (password resets, printer issues, user setup)</li>
+            <li>Installed and monitored security camera systems</li>
+            <li>Configured and tested network systems and created network maps</li>
+            <li>Worked with Cisco devices for server/network setup</li>
+            <li>Trained on Athena and Centricity healthcare systems</li>
+            <li>Assisted with firewall setup and network security (blocking websites, protecting servers)</li>
+            <li>Soldered and tested electronic boards used in oil industry equipment</li>
         </ul>
     </div>
 
     <div class="card">
         <h3>U.S. Army – Team Leader</h3>
         <ul>
-            <li>Managed high-value equipment and teams</li>
-            <li>Improved efficiency and safety processes</li>
+            <li>Managed high-value equipment and led teams</li>
+            <li>Maintained operational readiness and safety</li>
         </ul>
     </div>
 
@@ -230,21 +164,55 @@ footer {
     <h2><i class="fa-solid fa-diagram-project icon"></i>Projects</h2>
 
     <div class="card">
-        <h3>Database Design (ERD + 3NF)</h3>
-        <p>Built a normalized database and executed SQL queries.</p>
-        <a href="https://github.com/Iwallace11" class="button" target="_blank">
-            View My Projects
-        </a>
+        <h3>Hardware & Soldering Project</h3>
+        <p>
+        Soldered and tested over 100 circuit boards used in oil industry systems. Ensured proper grounding,
+        functionality, and system performance through hands-on testing.
+        </p>
     </div>
 
     <div class="card">
-        <h3>Networking Lab</h3>
-        <p>Designed and tested network configurations using Packet Tracer.</p>
+        <h3>Network Mapping & Configuration</h3>
+        <p>
+        Built network maps and verified connectivity in hospital environments. Configured Cisco devices
+        and supported server setup.
+        </p>
     </div>
 
     <div class="card">
-        <h3>Programming Projects</h3>
-        <p>Created Java and Python applications focused on logic and problem-solving.</p>
+        <h3>IT Support & System Setup</h3>
+        <p>
+        Provided help desk support including troubleshooting, user account setup, printer configuration,
+        and healthcare system environment setup (Athena & Centricity).
+        </p>
+    </div>
+
+</section>
+
+<section id="journal">
+    <h2><i class="fa-solid fa-book icon"></i>Student Journal</h2>
+
+    <div class="card">
+        <p>
+        During my internship at Raventech Systems, I gained hands-on experience in both hardware and IT support environments.
+        One of my first tasks involved soldering circuit boards, which was completely new to me. At first it was challenging,
+        but after repeated practice I quickly improved and became efficient at preparing and testing over 100 boards.
+        </p>
+
+        <p>
+        I also worked in hospital environments performing help desk tasks such as resetting passwords, fixing printer issues,
+        and setting up new users. In addition, I helped install and monitor security cameras and ensured systems were working properly.
+        </p>
+
+        <p>
+        I assisted with network-related tasks including creating network maps, checking connectivity, and configuring Cisco devices
+        for server use. I was also introduced to healthcare systems like Athena and Centricity and learned how they are used by nurses.
+        </p>
+
+        <p>
+        Later in my training, I worked on firewall setup and network security, helping block restricted websites and protect servers.
+        This experience gave me a strong understanding of real-world IT environments and strengthened both my technical and problem-solving skills.
+        </p>
     </div>
 
 </section>
