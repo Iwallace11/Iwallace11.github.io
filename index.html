@@ -5,61 +5,65 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ishmael Wallace | IT Portfolio</title>
 
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #0f172a;
+    background: #0b1120;
     color: #e5e7eb;
+    scroll-behavior: smooth;
 }
 
+/* HEADER */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 40px;
-    background: linear-gradient(135deg, #111827, #1f2937);
-}
-
-.header-text {
-    max-width: 600px;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0f172a, #1e3a8a);
 }
 
 .header-text h1 {
-    font-size: 40px;
     margin: 0;
+    font-size: 42px;
 }
 
 .header-text p {
-    font-size: 18px;
-    color: #9ca3af;
+    color: #cbd5f5;
 }
 
-.profile-placeholder {
-    width: 180px;
-    height: 180px;
-    background: #374151;
+/* 🔴 PHOTO STYLE */
+.profile-img {
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9ca3af;
-    font-size: 14px;
+    object-fit: cover;
+    border: 3px solid #3b82f6;
 }
 
+/* NAV */
 nav {
-    text-align: center;
     background: #020617;
     padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #1f2937;
 }
 
 nav a {
-    color: #e5e7eb;
     margin: 0 15px;
     text-decoration: none;
+    color: #60a5fa;
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* MAIN */
 .container {
     max-width: 1000px;
     margin: auto;
@@ -67,31 +71,63 @@ nav a {
 }
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 h2 {
-    border-left: 5px solid #3b82f6;
-    padding-left: 10px;
+    color: #60a5fa;
 }
 
+/* CARDS */
 .card {
-    background: #1e293b;
+    background: #111827;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
     margin-top: 15px;
+    border: 1px solid #1f2937;
+    transition: all 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #3b82f6;
+}
+
+/* GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
 }
 
+/* ICON */
+.icon {
+    margin-right: 10px;
+    color: #3b82f6;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #2563eb;
+}
+
+/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
     background: #020617;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -101,13 +137,19 @@ footer {
 <header>
     <div class="header-text">
         <h1>Ishmael Wallace</h1>
-        <p>IT Professional | U.S. Army Veteran | Future Software Developer</p>
-        <p>Focused on networking, programming, and real-world problem solving.</p>
+        <p><i class="fa-solid fa-laptop-code icon"></i>IT Professional | Software Developer</p>
+        <p><i class="fa-solid fa-location-dot icon"></i>Portland, TX</p>
+
+        <!-- 🔥 RESUME BUTTON (UPLOAD YOUR PDF TO GITHUB FIRST) -->
+        <a href="resume.pdf" class="button" target="_blank">
+            <i class="fa-solid fa-file icon"></i>Download Resume
+        </a>
     </div>
 
-    <div class="profile-placeholder">
-        Your Photo Here
-    </div>
+    <!-- 🔴 THIS IS WHERE YOUR PHOTO GOES -->
+    <!-- Replace "yourphoto.jpg" with your actual file name -->
+    <img src="yourphoto.jpg" alt="Profile Photo" class="profile-img">
+
 </header>
 
 <nav>
@@ -121,84 +163,82 @@ footer {
 <div class="container">
 
 <section id="about">
-    <h2>About Me</h2>
+    <h2><i class="fa-solid fa-user icon"></i>About Me</h2>
     <div class="card">
         <p>
-        I am a dedicated IT professional and U.S. Army veteran currently pursuing an AAS in Computer Programming at Del Mar College with a 3.88 GPA.
-        I bring hands-on experience in networking, database management, and software development using Python, Java, and SQL.
+        IT professional and U.S. Army veteran pursuing a Computer Programming degree at Del Mar College (GPA: 3.88).
+        Strong experience in networking, programming, and troubleshooting with hands-on technical projects.
         </p>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
+    <h2><i class="fa-solid fa-code icon"></i>Technical Skills</h2>
     <div class="skills-grid">
-        <div class="card">Python, Java, JavaScript, SQL</div>
-        <div class="card">MySQL, VS Code, Cisco Packet Tracer</div>
-        <div class="card">Windows, Linux, MacOS</div>
-        <div class="card">Networking, Troubleshooting, Security</div>
+        <div class="card"><i class="fa-solid fa-terminal icon"></i>Python, Java, JavaScript, SQL</div>
+        <div class="card"><i class="fa-solid fa-database icon"></i>MySQL, SQL Server</div>
+        <div class="card"><i class="fa-solid fa-network-wired icon"></i>Cisco Packet Tracer</div>
+        <div class="card"><i class="fa-solid fa-desktop icon"></i>Windows, Linux, MacOS</div>
     </div>
 </section>
 
 <section id="experience">
-    <h2>Experience & Training</h2>
+    <h2><i class="fa-solid fa-briefcase icon"></i>Experience</h2>
 
     <div class="card">
         <h3>Del Mar College – IT Student</h3>
-        <p>Completed 15+ courses in programming, networking, and system support.</p>
         <ul>
             <li>Built Java and Python applications</li>
-            <li>Developed SQL databases using MySQL</li>
-            <li>Designed and tested networks using Cisco Packet Tracer</li>
+            <li>Designed relational databases (MySQL)</li>
+            <li>Configured networks using Packet Tracer</li>
         </ul>
     </div>
 
     <div class="card">
         <h3>ACI Learning – IT Trainee</h3>
-        <p>Completed hands-on IT training program focused on real-world scenarios.</p>
         <ul>
-            <li>Troubleshot Windows environments</li>
-            <li>Configured hardware and network systems</li>
-            <li>Practiced cybersecurity fundamentals</li>
+            <li>Troubleshot systems and networks</li>
+            <li>Configured hardware and operating systems</li>
         </ul>
     </div>
 
     <div class="card">
-        <h3>U.S. Army – Team Leader / Mechanic</h3>
+        <h3>U.S. Army – Team Leader</h3>
         <ul>
-            <li>Managed $6M in equipment with high readiness</li>
-            <li>Led teams and trained personnel</li>
-            <li>Maintained strict safety and operational standards</li>
+            <li>Managed high-value equipment and teams</li>
+            <li>Improved efficiency and safety processes</li>
         </ul>
     </div>
 
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+    <h2><i class="fa-solid fa-diagram-project icon"></i>Projects</h2>
 
     <div class="card">
-        <h3>Database Design Project</h3>
-        <p>Designed a relational database in MySQL using ERD and normalization (3NF).</p>
+        <h3>Database Design (ERD + 3NF)</h3>
+        <p>Built a normalized database and executed SQL queries.</p>
+        <!-- ADD LINK HERE LATER -->
+        <!-- <a href="#" class="button">View Project</a> -->
     </div>
 
     <div class="card">
         <h3>Networking Lab</h3>
-        <p>Built and configured networks using Cisco Packet Tracer simulations.</p>
+        <p>Designed and tested network configurations using Packet Tracer.</p>
     </div>
 
     <div class="card">
         <h3>Programming Projects</h3>
-        <p>Developed Java and Python applications focused on problem-solving and logic design.</p>
+        <p>Created Java and Python applications focused on logic and problem-solving.</p>
     </div>
 
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
+    <h2><i class="fa-solid fa-envelope icon"></i>Contact</h2>
     <div class="card">
         <p>Email: iwallace1994@yahoo.com</p>
-        <p>GitHub: https://github.com/Iwallace11</p>
+        <p>GitHub: github.com/Iwallace11</p>
     </div>
 </section>
 
